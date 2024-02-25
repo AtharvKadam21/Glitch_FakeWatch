@@ -13,7 +13,17 @@ venv\Scripts\activate.bat
 ```
 pip install -r requirement.txt
 ```
-6) **Run server**
+
+6) Run the following commands
+```
+python manage.py migrate --run-syncdb 
+python manage.py makemigrations predictor
+python manage.py migrate predictor
+```
+
+7) **Run server**
 ```
 python manage.py runserver
 ```
+
+
