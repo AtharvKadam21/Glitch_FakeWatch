@@ -1,3 +1,10 @@
+"""
+Feature extraction - structure of feature extractor
+SiameseTuning - Siamese architecture
+EfficientNetGenAutoAtt - Inherits from EfficientNetGen and specializes for EfficientNet B4 model
+XceptionST - Xception architecture
+"""
+
 from collections import OrderedDict
 
 import torch
