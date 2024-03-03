@@ -11,3 +11,9 @@ class VideoPicker(models.Model):
 
     def get_url(self): 
         return self.video.url
+    
+class AudioPicker(models.Model):
+    audio = models.FileField(default="input_audio.mp3")
+
+    def get_url(self):
+        return self.audio.url

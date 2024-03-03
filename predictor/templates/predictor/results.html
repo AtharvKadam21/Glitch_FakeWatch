@@ -25,6 +25,8 @@
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="{% url "home" %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://localhost:9000">Store Images</a></li>
+
                 </ul>
                 <a class="btn btn-primary shadow" role="button" href="{% url "inspect" %}">Start Inspection</a>
             </div>
@@ -46,8 +48,8 @@
                         <div class="card-body text-center d-flex flex-column align-items-center">
                             <div class="card" style="width: 100%;">
                                 <div class="card-body" style="background: white; color: black; width: 100%; border-radius: 2rem;">
-                                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                                        <img src="{% static "img/input_img.jpeg" %}" style="width: 40%; border-radius: 5px; border-style: solid;">
+                                    <div style="display: flex; flex-direction: row; justify-content: center;">
+                                        <!-- <img src='{% static "img/input_img.jpeg" %}' style="width: 40%; border-radius: 5px; border-style: solid;"> -->
                                         <div style="display: flex; flex-direction: column; justify-content: space-evenly;">
                                             <h2 style="font-weight: bold;">Cumulative Score</h2>
                                             <table>
